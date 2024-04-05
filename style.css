@@ -60,6 +60,10 @@ body {
     padding: 16px;
 }
 
+.next-loss {
+    opacity: 0.5;
+}
+
 @media (max-width: 1000px) {
     #log {
         position: absolute;

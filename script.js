@@ -15,9 +15,13 @@ for (let i = 0; i < board.children.length; i++) {
             game_arr[i] = x_turn ? 'x' : 'o';
             game_history.push(i);
 
-            if (game_history.length > 5) {
+
+            if (game_history.length > 6) {
                 clear_tile(game_history.shift());
             }
+            // if (game_history.length == 5) {
+            //     board.children[game_history[0]].style.opacity = "0.5";
+            // }
             
     
             let new_entry = document.createElement("div");
