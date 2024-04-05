@@ -11,6 +11,7 @@ body {
     background-color: var(--ttt-background);
     margin: 0;
     color: var(--ttt-stroke);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #content {
@@ -49,4 +50,24 @@ body {
     background-size: 90%;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+#log {
+    background-color: black;
+    max-width: 400px;
+    width: 30%;
+    height: 100vh;
+    padding: 16px;
+}
+
+@media (max-width: 1000px) {
+    #log {
+        position: absolute;
+        top: 100%;
+        left: 0%;
+        width: 100%;
+        max-width: none;
+        height: auto;
+        transform: translateY(-100%);
+    }
 }
