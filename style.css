@@ -53,11 +53,13 @@ body {
 }
 
 #log {
-    background-color: black;
-    max-width: 400px;
+    position: absolute;
+    background-color: #0000009F;
+    max-width: 300px;
     width: 30%;
     height: 100vh;
     padding: 16px;
+    z-index: 100;
 }
 
 .next-loss {
@@ -89,7 +91,9 @@ body {
         left: 0%;
         width: 100%;
         max-width: none;
+        max-height: 200px;
         height: auto;
         transform: translateY(-100%);
+        overflow-y: scroll;
     }
 }
