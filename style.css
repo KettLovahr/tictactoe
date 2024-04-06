@@ -64,6 +64,24 @@ body {
     opacity: 0.5;
 }
 
+.fade {
+    animation: fading;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fading {
+    0% {
+        opacity: 1.0;
+    }
+    50% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 1.0;
+    }
+}
+
 @media (max-width: 1000px) {
     #log {
         position: absolute;

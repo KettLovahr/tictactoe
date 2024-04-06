@@ -19,9 +19,12 @@ for (let i = 0; i < board.children.length; i++) {
             if (game_history.length > 6) {
                 clear_tile(game_history.shift());
             }
-            // if (game_history.length == 5) {
-            //     board.children[game_history[0]].style.opacity = "0.5";
-            // }
+            if (game_history.length == 6) {
+                for (let i = 0; i < 9; i++) {
+                    board.children[i].classList.remove("fade")
+                }
+                board.children[game_history[0]].classList.add("fade")
+            }
             
     
             let new_entry = document.createElement("div");
