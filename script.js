@@ -14,11 +14,11 @@ for (let i = 0; i < board.children.length; i++) {
             el.classList.add(x_turn ? "cross" : "naught");
             game_arr[i] = x_turn ? 'x' : 'o';
             game_history.push(i);
-            
+
             let new_entry = document.createElement("div");
             new_entry.innerHTML = `Foi colocado um ${x_turn ? "X" : "O"} no quadrado ${i}`
             log.appendChild(new_entry);
-    
+
             x_turn = !x_turn;
             who_won()
 
